@@ -28,22 +28,22 @@ const Header = () => {
         </li>
         <li className='hover:border-b-2 border-b-primary duration-100'>
             <NavLink
-                to="/chefs"
-                aria-label="categories"
-                title="categories"
-                className={({ isActive }) => isActive ? "font-medium tracking-wide text-primary transition-colors duration-200 hover:text-deep-purple-accent-400" : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"}
-            >
-                Chefs
-            </NavLink>
-        </li>
-        <li className='hover:border-b-2 border-b-primary duration-100'>
-            <NavLink
                 to="/about"
                 aria-label="about"
                 title="about"
                 className={({ isActive }) => isActive ? "font-medium tracking-wide text-primary transition-colors duration-200 hover:text-deep-purple-accent-400" : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"}
             >
                 About Us
+            </NavLink>
+        </li>
+        <li className='hover:border-b-2 border-b-primary duration-100'>
+            <NavLink
+                to="/chefs"
+                aria-label="categories"
+                title="categories"
+                className={({ isActive }) => isActive ? "font-medium tracking-wide text-primary transition-colors duration-200 hover:text-deep-purple-accent-400" : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"}
+            >
+                Chefs
             </NavLink>
         </li>
         <li className='hover:border-b-2 border-b-primary duration-100'>
