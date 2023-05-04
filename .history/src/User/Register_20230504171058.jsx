@@ -25,7 +25,7 @@ const Register = () => {
     .then((result) => {
       const user = result.user;
       toast.success('Sing up successfully', { duration: 1200 })
-      navigate(from,{replace:true})
+      navigate(from?(from,{replace:true}) : '/')
       console.log(user)
   })
   .then((error) => {

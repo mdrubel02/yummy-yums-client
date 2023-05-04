@@ -3,7 +3,6 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import SocialLogin from './SocialLogin';
 import { useForm } from "react-hook-form";
 import { AuthContext } from '../Context/AuthProviders';
-import { toast } from 'react-hot-toast';
 
 const Login = () => {
     const {userSignIn} = useContext(AuthContext)
@@ -22,13 +21,14 @@ const Login = () => {
         userSignIn(email,password)
         .then((result) => {
             const user = result.user;
-            toast.success('Sing up successfully', { duration: 1200 })
-            navigate(from,{replace:true})
+            //  saveUserSocialLogin(user?.displayName, user?.email, user?.photoURL);
+             navigate('/home')
             console.log(user)
-        })
-        .then((error) => {
+          })
+          .then((error) => {
             console.log(error);
-        })
+            setLoad(false)
+          })
     }
 
  
