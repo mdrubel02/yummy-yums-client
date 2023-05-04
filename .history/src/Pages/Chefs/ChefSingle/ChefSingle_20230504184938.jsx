@@ -8,18 +8,15 @@ const ChefSingle = () => {
         <section className='container mx-auto'>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8' data-aos="fade-up">
                 <div>
-                    <figure><img src={singleDetails.chef_picture} className='object-cover w-full h-96 col-span-2 rounded shadow-lg' alt="Movie" /></figure>
+                    <figure><img src="https://i.ibb.co/5K4QVgq/jennifer-griffin-os-Nl3-g9-Vo-U-unsplash-1.jpg" className='object-cover w-full h-96 col-span-2 rounded shadow-lg' alt="Movie" /></figure>
                 </div>
                 <div style={{ 'backgroundImage': 'linear-gradient(90deg, #0201010d 40%, #BBCED5 80%)' }}>
                     <div className="card-body">
+                        <h2 className="card-title">New movie is released!</h2>
+                        <p>Click the button to watch on Jetflix app.</p>
                         <div className="card-actions justify-end">
                             <button className="btn btn-primary">Watch</button>
                         </div>
-                        <h2 className="card-title">{singleDetails.chef_name}</h2>
-                        <p><span className=''>Description:</span> {singleDetails.bio}</p>
-                        <p><span className='font-semibold'>Recipes :</span> {singleDetails.num_of_recipes}</p>
-                        <p><span className='font-semibold'>Experience :</span> {singleDetails.years_of_experience} Years</p>
-                        <p className='mt-2 font-semibold'>Likes <span className='text-red-600 font-semibold text-2xl'>{singleDetails.likes}</span></p>
                     </div>
                 </div>
             </div>

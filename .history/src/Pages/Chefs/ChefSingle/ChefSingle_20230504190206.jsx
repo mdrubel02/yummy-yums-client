@@ -12,14 +12,11 @@ const ChefSingle = () => {
                 </div>
                 <div style={{ 'backgroundImage': 'linear-gradient(90deg, #0201010d 40%, #BBCED5 80%)' }}>
                     <div className="card-body">
+                        <h2 className="card-title">New movie is released!</h2>
+                        <p>Click the button to watch on Jetflix app.</p>
                         <div className="card-actions justify-end">
                             <button className="btn btn-primary">Watch</button>
                         </div>
-                        <h2 className="card-title">{singleDetails.chef_name}</h2>
-                        <p><span className=''>Description:</span> {singleDetails.bio}</p>
-                        <p><span className='font-semibold'>Recipes :</span> {singleDetails.num_of_recipes}</p>
-                        <p><span className='font-semibold'>Experience :</span> {singleDetails.years_of_experience} Years</p>
-                        <p className='mt-2 font-semibold'>Likes <span className='text-red-600 font-semibold text-2xl'>{singleDetails.likes}</span></p>
                     </div>
                 </div>
             </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Chef = ({ chef }) => {
-    const { chef_picture, years_of_experience, chef_name, num_of_recipes, likes,id } = chef;
+    const { chef_picture, years_of_experience, chef_name, num_of_recipes, likes } = chef;
     return (
         <div className="flex flex-col max-w-lg p-6 space-y-6 overflow-hidden rounded-lg shadow-md font-jost bg-white">
             <div className="flex space-x-4 justify-between">
@@ -28,9 +28,7 @@ const Chef = ({ chef }) => {
                 <p><span className='font-semibold'>Experience :</span> {years_of_experience} Years</p>
                 <p className='mt-2 font-semibold'>Likes <span className='text-red-600 font-semibold text-2xl'>{likes}</span></p>
                 <div className='flex justify-between items-center'>
-                    <Link 
-                    to={`/chefSingle/${id}`}
-                    >
+                    <Link>
                         <button className="inline-flex items-center font-semibold px-6 py-2 bg-primary hover:bg-orange-600 text-white text-lg  cursor-pointer mt-7 ">
                             View Recipes
                         </button>
