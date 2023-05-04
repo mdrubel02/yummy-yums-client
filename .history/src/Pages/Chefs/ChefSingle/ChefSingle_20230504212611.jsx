@@ -1,18 +1,10 @@
-import React,{useState} from 'react';
+import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { toast } from 'react-hot-toast';
 
 const ChefSingle = () => {
     const singleDetails = useLoaderData()
-    const [isDisabled, setIsDisabled] = useState(false);
     console.log(singleDetails)
     const recipes = singleDetails.recipes;
-   
-
-    const handleClick =()=> {
-      setIsDisabled(true);
-      toast.success('button successfully disable', { duration: 1200 })
-    }
     return (
         <section className='container mx-auto'>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8' data-aos="fade-up">
@@ -22,7 +14,7 @@ const ChefSingle = () => {
                 <div style={{ 'backgroundImage': 'linear-gradient(90deg, #0201010d 40%, #BBCED5 80%)' }}>
                     <div className="card-body">
                         <div className="card-actions justify-end">
-                            <button className="inline-flex items-center font-semibold px-6 py-2 bg-primary hover:bg-orange-600 text-white text-lg  cursor-pointer mt-7" onClick={handleClick} disabled={isDisabled}>Favorite</button>
+                            <button className="btn btn-primary">Favorite</button>
                         </div>
                         <h2 className="card-title">{singleDetails.chef_name}</h2>
                         <p><span className=''>Description:</span> {singleDetails.bio}</p>
