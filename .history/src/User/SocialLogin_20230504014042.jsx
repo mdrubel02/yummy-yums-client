@@ -1,16 +1,13 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../Context/AuthProviders';
-import { useNavigate } from 'react-router-dom';
-import { toast } from 'react-hot-toast';
 const SocialLogin = () => {
-    const { googleSignIn, githubSignIn } = useContext(AuthContext)
-    const navigate=useNavigate()
+    const { googleSignIn,githubSignIn } = useContext(AuthContext)
     const signWithGoogleHandle = () => {
         googleSignIn()
             .then((result) => {
                 const user = result.user;
-                toast.success('SignIn with Github successfully', { duration: 1200 })
-                navigate('/home')
+                //  saveUserSocialLogin(user?.displayName, user?.email, user?.photoURL);
+                //  navigate(form, { replace: true })
                 console.log(user)
             })
             .then((error) => {
@@ -21,9 +18,9 @@ const SocialLogin = () => {
         githubSignIn()
             .then((result) => {
                 const user = result.user;
-                toast.success('SignIn with Github successfully', { duration: 1200 })
-                navigate(from ? (from, { replace: true }) : '/')
-                
+                //  saveUserSocialLogin(user?.displayName, user?.email, user?.photoURL);
+                //  navigate(form, { replace: true })
+                console.log(user)
             })
             .then((error) => {
                 console.log(error);

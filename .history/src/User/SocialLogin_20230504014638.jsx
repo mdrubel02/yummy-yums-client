@@ -9,8 +9,8 @@ const SocialLogin = () => {
         googleSignIn()
             .then((result) => {
                 const user = result.user;
-                toast.success('SignIn with Github successfully', { duration: 1200 })
-                navigate('/home')
+                //  saveUserSocialLogin(user?.displayName, user?.email, user?.photoURL);
+                //  navigate(form, { replace: true })
                 console.log(user)
             })
             .then((error) => {
@@ -21,9 +21,9 @@ const SocialLogin = () => {
         githubSignIn()
             .then((result) => {
                 const user = result.user;
-                toast.success('SignIn with Github successfully', { duration: 1200 })
+                toast.success('SignIn with Goole successfull', { duration: 1200 })
                 navigate(from ? (from, { replace: true }) : '/')
-                
+                console.log(user)
             })
             .then((error) => {
                 console.log(error);

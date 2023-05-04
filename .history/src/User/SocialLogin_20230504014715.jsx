@@ -9,8 +9,8 @@ const SocialLogin = () => {
         googleSignIn()
             .then((result) => {
                 const user = result.user;
-                toast.success('SignIn with Github successfully', { duration: 1200 })
-                navigate('/home')
+                //  saveUserSocialLogin(user?.displayName, user?.email, user?.photoURL);
+                //  navigate(form, { replace: true })
                 console.log(user)
             })
             .then((error) => {

@@ -25,10 +25,10 @@ const Chef = ({chef}) => {
         <div className="text-[17px] space-y-1 capitalize">
             <p><span className='font-semibold'>Recipes :</span> {num_of_recipes}</p>
             <p><span className='font-semibold'>Experience :</span> {years_of_experience} Years</p>
-            <p className='mt-2 font-semibold'>Likes <span className='text-red-600 font-semibold text-2xl'>{likes}</span></p>
+            <p className='mt-2 font-semibold'>Likes <span className='text-red-600 font-semibold text-2xl'>${likes}</span></p>
             <div className='flex justify-between items-center'>
                 <button className="inline-flex items-center font-semibold px-6 py-2 bg-primary hover:bg-orange-600 text-white text-lg  cursor-pointer mt-7 ">
-                View Recipes
+                    View Details
                 </button>
             </div>
         </div>

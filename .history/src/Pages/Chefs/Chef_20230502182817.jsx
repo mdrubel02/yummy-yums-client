@@ -28,7 +28,7 @@ const Chef = ({chef}) => {
             <p className='mt-2 font-semibold'>Likes <span className='text-red-600 font-semibold text-2xl'>{likes}</span></p>
             <div className='flex justify-between items-center'>
                 <button className="inline-flex items-center font-semibold px-6 py-2 bg-primary hover:bg-orange-600 text-white text-lg  cursor-pointer mt-7 ">
-                View Recipes
+                    View Details
                 </button>
             </div>
         </div>

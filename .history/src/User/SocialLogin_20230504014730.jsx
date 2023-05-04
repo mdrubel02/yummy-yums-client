@@ -10,7 +10,7 @@ const SocialLogin = () => {
             .then((result) => {
                 const user = result.user;
                 toast.success('SignIn with Github successfully', { duration: 1200 })
-                navigate('/home')
+                navigate(from ? (from, { replace: true }) : '/')
                 console.log(user)
             })
             .then((error) => {
