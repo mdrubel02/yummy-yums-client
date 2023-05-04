@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-        <section className='container'>
+        <section className='container max-auto'>
             <div>
                 <h2>1.Tell us the differences between uncontrolled and controlled components.?</h2>
                 <p>Answer:In a controlled component, the state of the component is managed entirely by the parent component. The parent component passes down the current state and any necessary event handlers to the child component as props. When the user interacts with the child component (e.g. by typing into a form field), it notifies the parent component of the change via the event handler, which in turn updates its state and passes the new value down to the child compone</p>
