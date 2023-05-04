@@ -69,7 +69,6 @@ const ChefSingle = () => {
                                         <span className="badge badge-ghost badge-sm">Desktop Support Technician</span>
                                     </td>
                                     <td>{recipe?.Method}</td>
-                                    <td>{recipe?.rating}</td>
                                 </tr>)
                             }
 

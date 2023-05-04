@@ -29,6 +29,13 @@ const router = createBrowserRouter([{
             return fetch(`http://localhost:5000/chefSingle/${params.id}`)
         },
         element:<PrivateRoute><ChefSingle/></PrivateRoute>},
+        // {
+        //     path: '/mainCourses/details/:id',
+        //     loader: async ({ params }) => {
+        //         return fetch(`https://acadu-server.vercel.app/course-details/${params.id}`)
+        //     },
+        //     element: <Details />
+        // },
     ]
 }]);
 export default router;

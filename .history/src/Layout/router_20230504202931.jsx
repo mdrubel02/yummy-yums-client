@@ -28,7 +28,7 @@ const router = createBrowserRouter([{
         loader: async ({ params }) => {
             return fetch(`http://localhost:5000/chefSingle/${params.id}`)
         },
-        element:<PrivateRoute><ChefSingle/></PrivateRoute>},
+        element:<ChefSingle/>},
     ]
 }]);
 export default router;

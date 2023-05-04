@@ -38,7 +38,6 @@ const ChefSingle = () => {
                                 <th>Name</th>
                                 <th>Ingredients</th>
                                 <th>Method</th>
-                                <th>Rating</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -69,7 +68,6 @@ const ChefSingle = () => {
                                         <span className="badge badge-ghost badge-sm">Desktop Support Technician</span>
                                     </td>
                                     <td>{recipe?.Method}</td>
-                                    <td>{recipe?.rating}</td>
                                 </tr>)
                             }
 
@@ -79,8 +77,9 @@ const ChefSingle = () => {
                                 <tr>
                                     <th></th>
                                     <th>Name</th>
-                                    <th>Ingredients</th>
-                                    <th>Method</th>
+                                    <th>Job</th>
+                                    <th>Favorite Color</th>
+                                    <th></th>
                                 </tr>
                             </tfoot>
 

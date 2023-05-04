@@ -24,7 +24,7 @@ const ChefSingle = () => {
                     </div>
                 </div>
             </div>
-            <div className='mt-5'>
+            <div>
                 <div className="overflow-x-auto w-full">
                     <table className="table w-full">
                         {/* head */}
@@ -36,9 +36,9 @@ const ChefSingle = () => {
                                     </label>
                                 </th>
                                 <th>Name</th>
-                                <th>Ingredients</th>
-                                <th>Method</th>
-                                <th>Rating</th>
+                                <th>Job</th>
+                                <th>Favorite Color</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -64,12 +64,14 @@ const ChefSingle = () => {
                                         </div>
                                     </td>
                                     <td>
-                                        {recipe?.ingredients}
+                                        Zemlak, Daniel and Leannon
                                         <br />
                                         <span className="badge badge-ghost badge-sm">Desktop Support Technician</span>
                                     </td>
-                                    <td>{recipe?.Method}</td>
-                                    <td>{recipe?.rating}</td>
+                                    <td>Purple</td>
+                                    <th>
+                                        <button className="btn btn-ghost btn-xs">details</button>
+                                    </th>
                                 </tr>)
                             }
 
@@ -79,8 +81,9 @@ const ChefSingle = () => {
                                 <tr>
                                     <th></th>
                                     <th>Name</th>
-                                    <th>Ingredients</th>
-                                    <th>Method</th>
+                                    <th>Job</th>
+                                    <th>Favorite Color</th>
+                                    <th></th>
                                 </tr>
                             </tfoot>
 
