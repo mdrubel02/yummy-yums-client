@@ -8,10 +8,9 @@ const Chef = ({ chef }) => {
     return (
         <div className="flex flex-col max-w-lg p-6 space-y-6 overflow-hidden rounded-lg shadow-md font-jost bg-white">
             <div>
-                <LazyLoadImage className="object-cover w-full mb-4 h-60 sm:h-96 dark:bg-gray-500" src={chef_picture}
-                    width={600} height={400}
-                    alt="Image Alt"
-                />
+                <LazyLoadImage>
+                    <img src={chef_picture} alt="" className="object-cover w-full mb-4 h-60 sm:h-96 dark:bg-gray-500" />
+                </LazyLoadImage>
                 <h2 className="mb-1 text-xl font-semibold capitalize">{chef_name}</h2>
             </div>
             <div className="text-[17px] space-y-1 capitalize">

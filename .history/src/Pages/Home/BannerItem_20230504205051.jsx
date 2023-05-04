@@ -20,7 +20,7 @@ const BannerItem = ({banner}) => {
                     
                     </h2>
                     <p className=" mb-4 text-base md:text-2xl">
-                    Sed gravida nisl a porta tincidunt. Integer aliquam nisi sit amet magna suscipit
+                    Sell ​​your used products and buy other people's used products
                     </p>
                     <Link
                         to="/categories"

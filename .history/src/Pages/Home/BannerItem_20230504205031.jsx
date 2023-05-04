@@ -17,10 +17,10 @@ const BannerItem = ({banner}) => {
                     <div className="w-full max-w-xl text-white">
                     <h2 className=" mb-6 font-jost text-3xl font-semibold tracking-tight sm:text-5xl">
                     The Finest Food<br></br>
-                    
+                    a Marketplace Connecting Buyers and Sellers
                     </h2>
                     <p className=" mb-4 text-base md:text-2xl">
-                    Sed gravida nisl a porta tincidunt. Integer aliquam nisi sit amet magna suscipit
+                    Sell ​​your used products and buy other people's used products
                     </p>
                     <Link
                         to="/categories"
