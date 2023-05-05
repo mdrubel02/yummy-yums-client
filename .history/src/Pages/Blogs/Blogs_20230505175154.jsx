@@ -17,9 +17,11 @@ const Blogs = () => {
                 <p>Answer:Creating a custom hook can simplify your code by reducing duplication, improving readability, and promoting reuse. By encapsulating logic within a custom hook, you can also make it easier to test and maintain your code.</p>
                 </div>
             </div>
-            
+            <div>
+                <button className="btn btn-secondary">Download pdf</button>
+            </div>
             <Pdf targetRef={ref} filename="code-example.pdf">
-                {({ toPdf }) => <button className='inline-flex items-center font-semibold px-4 py-3 sm:px-6 sm:py-4 text-lg bg-primary sm:text-xl my-5' onClick={toPdf}>Download pdf</button>}
+                {({ toPdf }) => <button onClick={toPdf}>Generate Pdf</button>}
             </Pdf>
         </section>
     );

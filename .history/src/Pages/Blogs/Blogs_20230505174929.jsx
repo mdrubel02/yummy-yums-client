@@ -1,12 +1,10 @@
 import React from 'react';
 import Pdf from "react-to-pdf";
-const ref = React.createRef();
 
 const Blogs = () => {
     return (
         <section className='container'>
             <div>
-                <div ref={ref}>
                 <h2>1.Tell us the differences between uncontrolled and controlled components.?</h2>
                 <p>Answer:In a controlled component, the state of the component is managed entirely by the parent component. The parent component passes down the current state and any necessary event handlers to the child component as props. When the user interacts with the child component (e.g. by typing into a form field), it notifies the parent component of the change via the event handler, which in turn updates its state and passes the new value down to the child compone</p>
                 <h2>2.How to validate React props using PropTypes?</h2>
@@ -15,11 +13,16 @@ const Blogs = () => {
                 <p>Answer:Node.js is a runtime environment that allows you to run JavaScript code outside of a web browser, while Express.js is a web framework that provides a set of tools and utilities for building web applications and APIs using Node.js.</p>
                 <h2> 4. What is a custom hook, and why will you create a custom hook?</h2>
                 <p>Answer:Creating a custom hook can simplify your code by reducing duplication, improving readability, and promoting reuse. By encapsulating logic within a custom hook, you can also make it easier to test and maintain your code.</p>
+                <div ref={ref}>
+                    <h1>Hello CodeSandbox</h1>
+                    <h2>Start editing to see some magic happen!</h2>
                 </div>
             </div>
-            
+            <div>
+                <button className="btn btn-secondary">Download pdf</button>
+            </div>
             <Pdf targetRef={ref} filename="code-example.pdf">
-                {({ toPdf }) => <button className='inline-flex items-center font-semibold px-4 py-3 sm:px-6 sm:py-4 text-lg bg-primary sm:text-xl my-5' onClick={toPdf}>Download pdf</button>}
+                {({ toPdf }) => <button onClick={toPdf}>Generate Pdf</button>}
             </Pdf>
         </section>
     );
